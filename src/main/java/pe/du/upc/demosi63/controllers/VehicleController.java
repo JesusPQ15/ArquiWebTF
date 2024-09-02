@@ -17,12 +17,12 @@ public class VehicleController {
     @Autowired
     private IVehicleService vs;
 
-    @PostMapping
-    public void registrar(@RequestBody VehicleDTO dto) {
-        ModelMapper m = new ModelMapper();
-        Vehicle d = m.map(dto, Vehicle.class);
-        vs.insert(d);
-    }
+    //@PostMapping
+    //public void registrar(@RequestBody VehicleDTO dto) {
+    //    ModelMapper m = new ModelMapper();
+    //    Vehicle d = m.map(dto, Vehicle.class);
+    //    vs.insert(d);
+    //}
 
     @GetMapping
     public List<VehicleDTO> listar() {
